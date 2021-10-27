@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TicTacToe</title>
+    <link rel="stylesheet" href="create.css">
+    <script src ="create.js"></script>
+</head>
+<body>
+<p id="title" style="text-align:center;"><b>Tic-Tac-Toe Game</b></p>
+<br>
+
+<div id="start" style="text-align:center;" >
+    <p id="text1"><b>Would you like to play?:</b> </p>
+<button id="startButton1" style="text-align:center;" type="button" onclick="removeStart(); document.getElementById('board').style.display='block'"><b>Yes!</b></button>
+</div>
+
+<div id="playAgain" style="text-align: center;" hidden>
+<button id="buttonPlayAgain" style="text-align:center;" type="button" onclick="playAgain();" >Play Again?</button>
+</div>
+
+<form name ="board">
+<div id="board" hidden>
+<img src="img/ticTacToe.png" height="600" width="600"/>
+    <button type="button" id="button1" onclick="document.board.result.value = button1Count()"><img id="pbutton1" src="img/button.jpg" height="175" width="150"/></button>
+    <button type="button" id="button2" onclick="document.board.result.value = button2Count()"><img id="pbutton2" src="img/button.jpg" height="175" width="135"/></button>
+    <button type="button" id="button3" onclick="document.board.result.value = button3Count()"><img id="pbutton3" src="img/button.jpg" height="175" width="150"/></button>
+    <button type="button" id="button4" onclick="document.board.result.value = button4Count()"><img id="pbutton4" src="img/button.jpg" height="150" width="150"/></button>
+    <button type="button" id="button5" onclick="document.board.result.value = button5Count()"><img id="pbutton5" src="img/button.jpg" height="150" width="135"/></button>
+    <button type="button" id="button6" onclick="document.board.result.value = button6Count()"><img id="pbutton6" src="img/button.jpg" height="150" width="150"/></button>
+    <button type="button" id="button7" onclick="document.board.result.value = button7Count()"><img id="pbutton7" src="img/button.jpg" height="150" width="150"/></button>
+    <button type="button" id="button8" onclick="document.board.result.value = button8Count()"><img id="pbutton8" src="img/button.jpg" height="150" width="135"/></button>
+    <button type="button" id="button9" onclick="document.board.result.value = button9Count()"><img id="pbutton9" src="img/button.jpg" height="150" width="150"/></button>
+    <!--<input name="result" readonly="true"> this input was for troubleshooting -->
+</div>
+</form>
+<form name="gameOver">
+<div id="gameOver" hidden>
+        <img src="img/game-over.jpg" height="600" width="600"/>
+</div>
+</form>
+
+
+
+
+</body>
+</html>
